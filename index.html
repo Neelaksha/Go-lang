@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* Flip card container */
+        .flip-card {
+            perspective: 1000px;
+        }
+
+        /* Flip card inner container */
+        .flip-card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+
+        /* Flip card front and back */
+        .flip-card-front,
+        .flip-card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        /* Style for the front of the card */
+        .flip-card-front {
+            background-color: #101214;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Style for the back of the card */
+        .flip-card-back {
+            background-color: #101214;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: rotateY(180deg);
+        }
+
+        /* Flip card hover effect */
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+    </style>
+    <title>Neelaksha's website</title>
+    <link rel="icon" type="image/png" href="path-to-your-favicon"/>
+</head>
+<body>
+    <div class="grid-2">
+        <div class="section-1 flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <!-- Content for the front of the card -->
+                    <i class="fas fa-code fa-5x white"></i>
+                    <h2>Neelaksha Bhardwaj</h2>
+                    <p>Mumbai, Maharashtra.</p>
+                </div>
+                <div class="flip-card-back">
+                    <!-- Content for the back of the card -->
+                    <a href="https://www.linkedin.com/in/neelaksha-bhardwaj-195bab25a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bhardwaj_neelaksha007" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Neelaksha" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.snapchat.com/add/neelaksha007?share_id=TGQ00cF7gOE&locale=en-GB" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="section-2">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas sint et nihil iusto eius nostrum sit error, repellat optio quisquam! Magnam dolore iusto cumque. Nostrum error iste neque maiores.</p>
+            <h2>Experience</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in maiores autem quidem.</p>
+
+            <h2>Skills</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in maiores autem quidem obcaecati excepturi! Cupiditate eaque itaque magni voluptatibus neque nobis est dolor? Atque sunt minus ipsa asperiores. At.</p>
+            <h2>Projects</h2>
+            <a href="#">Project 1</a>
+            <a href="#">Project 2</a>
+            <a href="#">Project 3</a>
+            <a href="#">Project 4</a>
+            <a href="#">Project 5</a>
+            <h2>Contact</h2>
+            <p>neelaksha.b@somaiya.edu</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
